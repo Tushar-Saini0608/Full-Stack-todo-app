@@ -1,24 +1,4 @@
-// const mongoose = require('mongoose');
 
-// const connectDB = async () => {
-//   try {
-//     mongoose.connect(process.env.MONGO_URI);
-//     console.log(`✅ MongoDB connected: ${mongoose.connection.host}`);
-//   } catch (err) {
-//     console.error(`❌ MongoDB connection failed: ${err.message}`);
-//     process.exit(1);
-//   }
-// };
-
-// // Handle connection events
-// mongoose.connection.on('disconnected', () => {
-//   console.warn('⚠️  MongoDB disconnected');
-// });
-// mongoose.connection.on('error', (err) => {
-//   console.error('MongoDB error:', err);
-// });
-
-// module.exports = connectDB;
 const mongoose = require('mongoose');
 
 const connectDB = async () => {

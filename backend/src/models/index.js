@@ -1,9 +1,6 @@
 const { v4: uuidv4 } = require('uuid');
 
-/**
- * In-memory database (replace with MongoDB/PostgreSQL in production)
- * Structure mirrors a real DB schema for easy migration
- */
+
 const db = {
   users: new Map(),
   todos: new Map(),
